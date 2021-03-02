@@ -1,0 +1,30 @@
+.revert {
+    font-style: italic;
+}
+  
+.square-big {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background: blue;
+}
+  
+.square-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background: brown;
+}
+  
+.square-small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background: green;
+}
