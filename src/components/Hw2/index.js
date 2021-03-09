@@ -61,6 +61,20 @@ export class Square extends React.Component {
     }
 }
 
+// Practical Worker, player switch
+const images = ['aaa', 'bbb', 'ccc']
+export class PlayerButton extends React.Component {
+
+  state = {
+    currentImage: 0
+  }
+
+  render () {
+    return (
+      <div>{images[this.state.currentImage]}</div>
+    )
+  }
+}
   
   
   

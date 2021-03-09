@@ -2,6 +2,7 @@ import React from 'react';
 
 import './styles.css'
 import data from './data.json'
+// import people from "./names.json"
 
 // practic work, spinner (from class)
 export class SpinnerClass extends React.Component {
@@ -82,7 +83,7 @@ export class UserList extends React.Component {
     return (
       <div>
         { data.map((element, i) => {
-          return <div className = 'user'>
+          return <div key = {element._id} className = 'user'>
             <h3>{element.name.first}</h3>
             <h4>{element.name.last}</h4>
           </div>
@@ -110,3 +111,43 @@ export class UserSignIn extends React.Component {
       <button onClick = {this.handleClick} >Sign In</button>
   }
 }
+
+// homework, task 3, plus minus from props
+class Button extends React.Component {
+  render () {
+    return <button onClick = {this.props.click}>{this.props.label}</button>
+  }
+}
+
+export class ButtonPlusMinusProps extends React.Component {
+  state = {
+    number: 0
+  }
+  plus = () => {
+    this.setState({ number: this.state.number + 1})
+  }
+  minus = () => {
+    this.setState({number: this.state.number - 1})
+  }
+
+  render () {
+    return (
+    <div style = {{border: '4px solid black', width: '300px', height: '40px'}}>
+      <Button label = 'plus' click = {this.plus}/>
+      {this.state.number}
+      <Button label = 'minus' click = {this.minus}/>
+    </div>
+    )
+  }
+}
+
+// export class PeopleList extends React.Component {
+//   state = {
+//     people: ['Jhon', 'Mary', 'Angel']
+//   }
+//   newPeople = [...this.state.people, oneMoreName]
+
+//   render () {
+
+//   }
+// }
