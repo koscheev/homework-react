@@ -4,10 +4,12 @@ import {Revert} from './components/Hw2'
 import {Change} from './components/Hw2'
 import {Square} from './components/Hw2'  
 
-import {SpinnerClass} from './components/Hw3'
+import {ButtonPlusMinusProps, SpinnerClass} from './components/Hw3'
 import {SpinnerProps} from './components/Hw3'
 import {Menu} from './components/Hw3'
 import {UserSignIn} from './components/Hw3'
+import {PlayerButton} from './components/Hw2'
+import {TodoList} from './components/TodoList'
 // import{NumberIngr} from './components/Hw3'
 // import {Ingridients} from './components/Hw3'
 import {UserList} from './components/Hw3'
@@ -56,6 +58,22 @@ function App() {
       {/* button sign in */}
       <div>
         <UserSignIn />
+      </div>
+
+      <div>
+        <ButtonPlusMinusProps />
+      </div>
+
+      <div>
+        {/* <PeopleList /> */}
+      </div>
+
+      <div>
+        <PlayerButton />
+      </div>
+
+      <div>
+        <TodoList />
       </div>
     </div>
   );
