@@ -76,6 +76,3 @@ export class PlayerButton extends React.Component {
   }
 }
   
-  
-  
-  

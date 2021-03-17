@@ -1,6 +1,7 @@
 import React from 'react';
 import initialItems from './initialItems.json'
 
+// добавление тудушек на страницу
 
 export class TodoList extends React.Component {
     state = {
